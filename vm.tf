@@ -24,6 +24,13 @@ resource "azurerm_network_interface" "main" {
   }
 }
 
+resource "azurerm_public_ip" "main" {
+    name                = "example-public-ip"
+    location            = azurerm_resource_group.main.location
+    resource_group_name = azurerm_resource_group.main.name
+    allocation_method   = "Dynamic"
+}
+
 resource "azurerm_linux_virtual_machine" "main" {
   name                = "example-machine"
   resource_group_name = azurerm_resource_group.main.name
