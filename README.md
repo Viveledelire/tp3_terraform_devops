@@ -59,7 +59,7 @@ Voilà, votre serveur Terraform est configuré.
 
 ### Sans modifier les fichiers fournis
 
-Le projet étant déjà intégralement configuré, vous pouvez vous contenté d'exécuter les commandes suivantes pour créer l'intégralité des éléments mentionnés au début de ce Readme : 
+Le projet étant déjà intégralement configuré, vous pouvez vous contenter d'exécuter les commandes suivantes pour créer l'intégralité des éléments mentionnés au début de ce Readme : 
 
 ```
 $ terraform init
