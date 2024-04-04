@@ -17,12 +17,6 @@ resource "azurerm_network_interface" "main" {
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 
-resource "azurerm_public_ip" "my_terraform_public_ip" {
-    name                = "example-public-ip"
-    location            = azurerm_resource_group.main.location
-    resource_group_name = azurerm_resource_group.main.name
-    allocation_method   = "Dynamic"
-}
 
   ip_configuration {
     name                          = "internal"
@@ -30,6 +24,12 @@ resource "azurerm_public_ip" "my_terraform_public_ip" {
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = azurerm_public_ip.my_terraform_public_ip.id
   }
+}
+resource "azurerm_public_ip" "my_terraform_public_ip" {
+    name                = "example-public-ip"
+    location            = azurerm_resource_group.main.location
+    resource_group_name = azurerm_resource_group.main.name
+    allocation_method   = "Dynamic"
 }
 
 resource "azurerm_linux_virtual_machine" "main" {
