@@ -16,7 +16,7 @@ $ git clone https://github.com/Viveledelire/tp3_terraform_devops.git
 
 Cela vous permettra d'avoir accès à tous les fichiers de configuration directement.
 
-Une fois le repository cloné, vous pouvez installer Azure CLI en suivant les étapes de cette documentation : < /br>
+Une fois le repository cloné, vous pouvez installer Azure CLI en suivant les étapes de cette documentation : <br />
 https://learn.microsoft.com/fr-fr/cli/azure/install-azure-cli-linux?pivots=apt
 
 Puis, installer Terraform : 
@@ -47,10 +47,10 @@ $ az account list --query "[].{name:name, subscriptionId:id}"
 $ az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<YourSubscriptionId>"
 # Vous devez remplacer l'élément <YourSubscriptionId> par l'ID qui va vous être retourné par la première commande.
 ```
-La première commande vous permet de récupérer l'ID de votre abonnement Azure. < /br>
-La seconde commande vous permet de créer un "Service Principal" qui accorde le rôle `Contributor` à votre instance dans les limites de votre abonnement Azure. < /br>
-Un "Service principal" est une entité de sécurité dans Azure utilisée par une application, un service ou un objet de sécurité pour s'authentifier auprès de Microsoft Entra ID < /br>
-et accéder à des ressources. < /br>
+La première commande vous permet de récupérer l'ID de votre abonnement Azure. <br />
+La seconde commande vous permet de créer un "Service Principal" qui accorde le rôle `Contributor` à votre instance dans les limites de votre abonnement Azure. <br />
+Un "Service principal" est une entité de sécurité dans Azure utilisée par une application, un service ou un objet de sécurité pour s'authentifier auprès de Microsoft Entra ID <br />
+et accéder à des ressources. <br />
 C'est ce "Service principal" qui va permettre à votre instance d'intéragir avec votre tenant.
 
 Voilà, votre serveur Terraform est configuré.
@@ -67,7 +67,7 @@ $ terraform plan
 $ terraform apply
 ```
 
-Vous pourrez ensuite vous rendre dans Azure pour vérifier que tous les éléments se sont bien créés et en profiter pour récupérer l'IP publique de la nouvelle instance. < /br>
+Vous pourrez ensuite vous rendre dans Azure pour vérifier que tous les éléments se sont bien créés et en profiter pour récupérer l'IP publique de la nouvelle instance. <br />
 Pour finaliser ce projet, vous n'aurez plus qu'à tenter la connexion SSH en utilisant cette commande : 
 
 ```
@@ -90,7 +90,7 @@ $ terraform plan
 $ terraform apply
 ```
 
-Vous pourrez ensuite vous rendre dans Azure pour vérifier que tous les éléments se sont bien créés et en profiter pour récupérer l'IP publique de la nouvelle instance. < /br>
+Vous pourrez ensuite vous rendre dans Azure pour vérifier que tous les éléments se sont bien créés et en profiter pour récupérer l'IP publique de la nouvelle instance. <br />
 Pour finaliser ce projet, vous n'aurez plus qu'à tenter la connexion SSH en utilisant cette commande : 
 
 ```
