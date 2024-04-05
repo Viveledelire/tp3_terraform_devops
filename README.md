@@ -11,7 +11,7 @@ Dans un premier temps, vous aurez besoin de créer une instance Azure. Cette ins
 Connectez-vous en SSH à l'instance Azure que vous venez de créer. Ensuite, clonez ce repository github en utilisant cette commande : 
 
 ```
-$ git clone https://github.com/Viveledelire/tp3_terraform_devops.git
+$ git clone 
 ```
 
 Cela vous permettra d'avoir accès à tous les fichiers de configuration directement.
