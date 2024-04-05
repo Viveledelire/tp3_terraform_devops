@@ -57,8 +57,6 @@ Voilà, votre serveur Terraform est configuré.
 
 ## Déploiement du projet
 
-### Sans modifier les fichiers fournis
-
 Le projet étant déjà intégralement configuré, vous pouvez vous contenter d'exécuter les commandes suivantes pour créer l'intégralité des éléments mentionnés au début de ce Readme : 
 
 ```
@@ -72,27 +70,4 @@ Pour finaliser ce projet, vous n'aurez plus qu'à tenter la connexion SSH en uti
 
 ```
 ssh adminuser@<IPpublique>
-```
-### En modifiant les fichier fournis
-
-Vous pouvez bien évidement vouloir personnaliser les noms des éléments qui vont se créer. Voici donc où trouver chacun des éléments : 
-
-- le nom du groupe de ressource est définit dans `main.tf`
-- le nom du compte de stockage est définit dans `sa.tf`
-  - le nom du compte de stockage devant être unique dans le monde entier, je vous déconseille fortement de modifier cette partie  
-- tous les autres éléments sont définit dans `vm.tf`
-
-Une fois que vous êtes satisfait avec vos noms d'éléments, vous pouvez lancer les commandes suivantes : 
-
-```
-$ terraform init
-$ terraform plan
-$ terraform apply
-```
-
-Vous pourrez ensuite vous rendre dans Azure pour vérifier que tous les éléments se sont bien créés et en profiter pour récupérer l'IP publique de la nouvelle instance. <br />
-Pour finaliser ce projet, vous n'aurez plus qu'à tenter la connexion SSH en utilisant cette commande : 
-
-```
-ssh <nom_user>@<IPpublique>
 ```
