@@ -59,6 +59,7 @@ Le projet étant déjà intégralement configuré, vous pouvez vous contenter d'
 
 ```
 $ terraform init
+$ az login
 $ terraform plan
 $ terraform apply
 ```
