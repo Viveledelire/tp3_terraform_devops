@@ -19,10 +19,8 @@ Cela vous permettra d'avoir accès à tous les fichiers de configuration directe
 Une fois le repository cloné, vous pouvez installer Azure CLI en suivant les étapes de cette documentation : <br />
 https://learn.microsoft.com/fr-fr/cli/azure/install-azure-cli-linux?pivots=apt
 
-Puis, installer Terraform : 
-
-```
-```
+Puis, installer Terraform en suivant les étapes de cette documentation : <br />
+https://developer.hashicorp.com/terraform/install?product_intent=terraform
 
 Et enfin, vous aurez besoin de générer une clé SSH, en laissant le chemin par défaut, avec la commande : 
 
