@@ -34,7 +34,7 @@ Une fois toutes ces étapes franchies, vous n'avez plus qu'à configurer votre s
 
 ### Configuration du serveur
 
-Pour configurer votre serveur, dans un premier temps, vous aurez besoin de vous authentifier auprès d'Azure en utilisant cette commande : 
+Pour configurer votre serveur, dans un premier temps, vous aurez besoin de vous connecter à Azure en utilisant cette commande : 
 
 ```
 $ az login
