@@ -49,7 +49,7 @@ $ az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<YourSu
 ```
 La première commande vous permet de récupérer l'ID de votre abonnement Azure. <br />
 La seconde commande vous permet de créer un "Service Principal" qui accorde le rôle `Contributor` à votre instance dans les limites de votre abonnement Azure. <br />
-Un "Service principal" est une entité de sécurité dans Azure utilisée par une application, un service ou un objet de sécurité pour s'authentifier auprès de Microsoft Entra ID <br />
+Un "Service principal" est une entité de sécurité dans Azure utilisée par une application, un service ou un objet de sécurité pour s'authentifier auprès de Microsoft Entra ID 
 et accéder à des ressources. <br />
 C'est ce "Service principal" qui va permettre à votre instance d'intéragir avec votre tenant.
 
